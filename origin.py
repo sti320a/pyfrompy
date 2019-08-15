@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 cwd = os.getcwd()
-filename = f"{cwd}/{datetime.now().strftime('%Y%m%d%H%M%S')}.py"
+filename = f"{cwd}/{datetime.now().strftime('tmp_%Y%m%d%H%M%S')}.py"
 
 
 def mkfile(filename: str):
