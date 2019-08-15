@@ -7,7 +7,7 @@ filename = f"{cwd}/{datetime.now().strftime('tmp_%Y%m%d%H%M%S')}.py"
 
 def mkfile(filename: str):
     with open(filename, 'w') as f:
-        f.write("print('Hello, world')")
+        f.write("print('Hello, world')\n")
 
 
 if __name__ == '__main__':
