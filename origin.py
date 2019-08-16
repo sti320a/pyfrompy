@@ -1,8 +1,9 @@
 import os
 from datetime import datetime
 
-cwd = os.getcwd()
-filename = f"{cwd}/{datetime.now().strftime('tmp_%Y%m%d%H%M%S')}.py"
+current_dir = os.getcwd()
+timestamp_now = datetime.now().strftime('tmp_%Y%m%d%H%M%S')
+filename = f"{current_dir}/{timestamp_now}.py"
 
 
 def mkfile(filename: str):
